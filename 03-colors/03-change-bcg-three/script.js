@@ -9,8 +9,20 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
 (function() {
+    function getRandomArbitrary(min, max) {
+        let randomMin = Math.random() * (1 - 255);
+        result = randomMin - (randomMin * 2);
+        return Math.floor(result);
+    };
 
-    // your code here
+    document.getElementById("run").addEventListener('click', function () {
 
+        const R = getRandomArbitrary(1 - 255);
+        const G = getRandomArbitrary(1 - 255);
+        const B = getRandomArbitrary(1 - 255);
+
+        document.body.style.backgroundColor = `rgb(${R}, ${G}, ${B})`;
+    });
 })();
