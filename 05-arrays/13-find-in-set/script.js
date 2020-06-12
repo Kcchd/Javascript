@@ -22,5 +22,9 @@
         "Lucas",
     ]);
 
-    // your code here
+    document.getElementById('run').addEventListener('click', function() {
+        var mySet = new Set(people); 
+        console.log(mySet.size);
+        console.log(mySet.has('Alexandre'))
+    })
 })();

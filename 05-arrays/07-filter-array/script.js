@@ -89,6 +89,10 @@
         },
     ];
 
-    // your code here
+    people.forEach(element => {
+        if(element.age > 18){
+        console.log(element)
+        }
+    })
 
 })();

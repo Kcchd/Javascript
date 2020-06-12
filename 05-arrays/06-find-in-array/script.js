@@ -89,12 +89,13 @@
         },
     ];
 
-    people.forEach(test);
-    function test() {
-        if(firstname == 'Dupont' && lastname == 'Jean'){
-            console.log(email + index);
+    people.forEach(element => {
+        if(element.firstname == 'Jean' && element.lastname == 'Dupont'){
+            element.index = people.indexOf(element);
+            console.log(element.email);
+            console.log(element.index)
         }
-    }
+    })
     //Boucle if condition Dupont et Jean, console.log email et afficher array  
 
 })();

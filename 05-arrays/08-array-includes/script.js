@@ -26,6 +26,11 @@
         "cherry",
     ];
 
-    // your code here
-
+    if(fruits.includes('apple') == true ) {
+        console.log('yes');
+    }
+    else {
+        console.log('no');
+    }
 })();
+  

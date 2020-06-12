@@ -37,6 +37,21 @@
         "tangent",
         "arboré",
     ]);
+    document.getElementById('run').addEventListener('click', function() {
 
-    // your code here
+    let randomBirds = birds[Math.floor(Math.random()*birds.length)]
+    let randomAdjectives = Math.floor(Math.random() * adjectives.size);
+    const adjectivesArray = Array.from(adjectives);
+
+    if (randomBirds.fem == true){
+        console.log('La '+randomBirds.name+' '+adjectivesArray[randomAdjectives]+'e')
+    }
+    else {
+        console.log('Le '+randomBirds.name+' '+adjectivesArray[randomAdjectives])
+    }
+    })
+    //Create a var who take a array element random with index
+    //Create a var who take a set element random with index
+    //Créer une variable qui prend en compte la valeur boléenne
+    //concatenation of the sum of the two element 
 })();

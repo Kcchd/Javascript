@@ -23,5 +23,12 @@
         "cherry",
     ]);
 
-    // your code here
+    document.getElementById('run').addEventListener('click', function() {
+        var mySet = new Set(fruits);
+        mySet.delete('apple');
+        mySet.delete('cherry');
+        mySet.add('kiwi');
+        mySet.add('banana');
+        console.log(mySet)
+    })
 })();
