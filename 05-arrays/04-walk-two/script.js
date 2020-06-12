@@ -1,6 +1,6 @@
 /* becode/javascript
  *
- * /05-arrays/04-walk-two/script.js - 5.4: parcours de tableau (2)
+ * /05-fruitss/04-walk-two/script.js - 5.4: parcours de tableau (2)
  *
  * coded by leny@BeCode
  * started at 26/10/2018
@@ -26,6 +26,12 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById('run').addEventListener('click', function(){
+        fruits.forEach(myFunction); 
+        function myFunction(item){
+            console.log(item);
+        
+        }
+    })
 
 })();

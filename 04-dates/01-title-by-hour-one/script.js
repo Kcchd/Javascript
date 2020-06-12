@@ -10,5 +10,5 @@
 // You will have time to focus on it later.
 
 (function() {
-    document.getElementById('target').innerHTML = new Date().getHours() >= 18 ? 'Good evening' : 'Hello';
+    document.getElementById('target').innerHTML = new Date().getHours() >= 17 ? 'Good evening' : 'Hello';
 })();

@@ -26,6 +26,8 @@
         "cherry",
     ];
 
-    // your code here
+    for(i=0; i < fruits.length; i++){
+        alert(fruits[i]);
+    }
 
 })();
