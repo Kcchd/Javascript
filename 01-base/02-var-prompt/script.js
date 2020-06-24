@@ -8,7 +8,6 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-    var getName;
     var getName = prompt("What's your name?");
-    alert("Hello "+getName+" !");
+    alert("Hello " + getName + " !");
 
